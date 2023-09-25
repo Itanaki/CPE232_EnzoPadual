@@ -2,8 +2,7 @@
 - hosts: all
   become: true
   tasks:
-
-  - name: install apache and php
+  - name: update repository index
     package:
       name:
         - "{{ apache_package }}"
